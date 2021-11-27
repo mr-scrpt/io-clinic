@@ -1,5 +1,5 @@
 /* Библиотеки */
-@import "./lib/smartgrid.scss";
+@import "./lib/smart-grid.scss";
 
 /* INIT */
 @import "./preset/reset.scss";
@@ -17,7 +17,7 @@
 /* Блоки */
 @import "./blocks/button.scss";
 @import "./blocks/input.scss";
-@import "./blocks/textarea.scss";
+/*@import "./blocks/textarea.scss";*/
 @import "./blocks/checkbox.scss";
 @import "./blocks/img.scss";
 @import "./blocks/title.scss";

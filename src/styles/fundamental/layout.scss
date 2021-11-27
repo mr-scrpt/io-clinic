@@ -8,4 +8,12 @@
 	&__wrap {
 		@include wrapper();
 	}
+	&__row {
+		max-width: 1440px;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	&__flat {
+		max-width: 1440px;
+	}
 }

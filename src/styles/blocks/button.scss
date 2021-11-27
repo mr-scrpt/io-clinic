@@ -8,12 +8,12 @@
 	padding: 0;
 	user-select: none;
 	outline: 0;
-	background: $color_passive;
-	border: 1px solid $color_passive;
+	background: transparent;
+	border: 1px solid $color_pink;
 	white-space: nowrap;
 	border-radius: 3px;
 	text-decoration: none;
-	@include ts(background, border-color);
+	@include ts(background);
 
 	& .button__text {
 		position: relative;
@@ -21,21 +21,24 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		vertical-align: top;
-		color: $color_white;
-		text-transform: lowercase;
-		font-weight: 600;
+		color: $color_pink;
+		text-transform: uppercase;
+		font-weight: 400;
 		letter-spacing: 0.12em;
+		@include ts(color);
 	}
 
 	/* HOVER */
 	&:hover {
-		background: $color_active;
-		border-color: $color_active;
+		background: $color_pink;
 		cursor: pointer;
+		& .button__text {
+			color: $color_light;
+		}
 	}
 }
 
-/* Иодификаторы */
+/* Модификаторы */
 .button_width_available {
 	width: 100%;
 }
@@ -51,7 +54,7 @@
 /* Иодификаторы КОНЕЦ */
 
 /*Виды кнопок*/
-.button.button_view {
+/*.button.button_view {
 	&_s {
 		background: transparent;
 		& .button__text {
@@ -76,7 +79,7 @@
 			color: $color_base;
 		}
 	}
-}
+}*/
 /*Виды кнопок КОНЕЦ*/
 
 /*Размеры кнопок*/

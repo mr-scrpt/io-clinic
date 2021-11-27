@@ -2,9 +2,9 @@
 	position: relative;
 	display: inline-flex;
 	touch-action: manipulation;
-	border-radius: 3px;
-	background-color: $color_light;
-	border: 1px solid $color_active;
+	/*border-radius: 3px;*/
+	/*background-color: $color_light;*/
+	border-bottom: 1px solid $color_pink;
 	@include ts(border-color);
 }
 
@@ -27,18 +27,18 @@
 	border: 0;
 	outline: none;
 	background: none;
-	color: $color_base;
+	color: $color_gray_dark;
 }
 
 /*Виды полей*/
 
-.input.input_view_error {
+/*.input.input_view_error {
 	background-color: $color_passive;
 }
 
 .input.input_view_success {
 	border-color: $color_base;
-}
+}*/
 
 /*Виды полей КОНЕЦ*/
 
