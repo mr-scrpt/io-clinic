@@ -1,5 +1,28 @@
 <header class="header page__header">
 	<div class="header__line">
-		<div class="header__inner layout__wrap">1</div>
+		<div class="header__inner layout__wrap">
+			{% include "blocks/logo/logo.njk" %}
+
+			{% set inject = {
+			parentClass: 'header__menu',
+			menuBrakePoint: '994',
+			iconSandwichClass: 'icon icon_burger',
+			listData: menu.menu_info,
+			menuItemTpl: 'menu-m-item'
+			}%}
+			{% include "blocks/menu/menu-m.njk" %}
+
+			{% set inject = {
+			parentClass: 'header__social'
+			}%}
+			{% include "blocks/social/social-list.njk" %}
+
+			<div class="header__button">
+				<div class="button button_size_s">
+					<div class="button__text">Записаться</div>
+				</div>
+			</div>
+		</div>
 	</div>
+
 </header>

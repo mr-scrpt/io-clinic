@@ -1,0 +1,13 @@
+<div class="block-s menu-m {{inject.parentClass}}" data-adaptive-width="{{inject.menuBrakePoint}}">
+	<div class="block-s__inner menu-m__inner">
+		<div class="block-s__controller menu-m__controller">
+			<div class="menu-m__controller-icon {{inject.iconSandwichClass}}"></div>
+
+		</div>
+		<div class="block-s__body menu-m__list menu-m__list">
+			{% for item in inject.listData %}
+				{% include "blocks/menu/" + inject.menuItemTpl + ".njk" %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

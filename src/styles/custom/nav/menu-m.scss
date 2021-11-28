@@ -1,0 +1,25 @@
+.menu-m {
+	&__inner {
+		display: flex;
+	}
+
+	&__controller {
+		margin-left: auto;
+		margin-right: 0;
+	}
+
+	&__list {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	&__item {
+		color: $color_black_light;
+		padding: 5 10px;
+		margin: 0 20px;
+		@include ts(color);
+		&:hover {
+			color: $color_pink;
+		}
+	}
+}

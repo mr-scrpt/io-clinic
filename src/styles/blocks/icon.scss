@@ -21,13 +21,23 @@
 .icon.icon_burger {
 	//background-image: url('../img/icon/icon_burger.svg');
 	mask-image: url("../img/icon/icon_burger.svg");
-	background-color: red;
-	width: 31px;
-	height: 21px;
+	background-color: $color_pink;
+	width: 24px;
+	height: 24px;
 }
 
-.icon.icon_viber {
-	background-image: url("../img/icon/icon_viber.svg");
-	width: 30px;
-	height: 30px;
+.icon.icon_phone {
+	background-image: url("../img/icon/icon_phone.svg");
+	width: 25px;
+	height: 25px;
+}
+.icon.icon_insta {
+	background-image: url("../img/icon/icon_insta.svg");
+	width: 25px;
+	height: 25px;
+}
+.icon.icon_fb {
+	background-image: url("../img/icon/icon_fb.svg");
+	width: 25px;
+	height: 25px;
 }

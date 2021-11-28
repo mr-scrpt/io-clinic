@@ -26,11 +26,14 @@
 @import "./blocks/deco.scss";
 @import "./blocks/text.scss";
 @import "./blocks/relative-box.scss";
+@import "./blocks/block-s.scss";
 
 /* Блоки Верстки */
 @import "./logo.scss";
-
+@import "./custom/social.scss";
 /* Навигация */
+@import "./custom/nav/menu-m.scss";
+
 * {
 	box-sizing: border-box;
 }

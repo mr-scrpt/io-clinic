@@ -11,7 +11,7 @@
 	background: transparent;
 	border: 1px solid $color_pink;
 	white-space: nowrap;
-	border-radius: 3px;
+	border-radius: 20px;
 	text-decoration: none;
 	@include ts(background);
 
@@ -86,18 +86,11 @@
 
 /*S - Начало*/
 .button_size_s {
-	font-size: 12px;
+	font-size: 11px;
 	line-height: 14px;
 }
 .button_size_s .button__text {
-	margin: 3px 15px;
-	@include bp768-block() {
-		margin: 3px 30px;
-	}
-
-	@include bp994-block() {
-		margin: 5px 45px;
-	}
+	margin: 12px 30px;
 }
 /*S - КОНЕЦ*/
 

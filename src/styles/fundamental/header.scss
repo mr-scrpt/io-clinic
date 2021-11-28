@@ -1,2 +1,31 @@
 .header {
+	&__line {
+	}
+
+	&__inner {
+		display: flex;
+		align-items: center;
+	}
+
+	&__menu {
+		flex-grow: 1;
+	}
+
+	&__social {
+		display: none;
+		@include bp994-block() {
+			display: flex;
+			min-width: 170px;
+			justify-content: center;
+		}
+	}
+
+	&__button {
+		display: none;
+		@include bp994-block() {
+			display: flex;
+			min-width: 170px;
+			flex-direction: row-reverse;
+		}
+	}
 }
