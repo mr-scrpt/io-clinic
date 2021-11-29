@@ -90,7 +90,10 @@
 	line-height: 14px;
 }
 .button_size_s .button__text {
-	margin: 12px 30px;
+	margin: 8px 20px;
+	@include bp768-block() {
+		margin: 12px 30px;
+	}
 }
 /*S - КОНЕЦ*/
 

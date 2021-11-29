@@ -8,6 +8,14 @@
 			{% for item in inject.listData %}
 				{% include "blocks/menu/" + inject.menuItemTpl + ".njk" %}
 			{% endfor %}
+
+			<div class="menu-m__action">
+				{% set inject = {
+					parentClass: 'menu-m__social'
+				}%}
+				{% include "blocks/social/social-list.njk" %}
+			</div>
 		</div>
+
 	</div>
 </div>

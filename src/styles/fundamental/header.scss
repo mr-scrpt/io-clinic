@@ -1,5 +1,7 @@
 .header {
 	&__line {
+		border-bottom: 1px solid $color_pink_light;
+		padding: 15px 0;
 	}
 
 	&__inner {
@@ -8,7 +10,12 @@
 	}
 
 	&__menu {
-		flex-grow: 1;
+		max-width: 25px;
+		@include bp994-block() {
+			flex-grow: 1;
+			max-width: 100%;
+			order: 1;
+		}
 	}
 
 	&__social {
@@ -17,15 +24,23 @@
 			display: flex;
 			min-width: 170px;
 			justify-content: center;
+			order: 2;
 		}
 	}
-
 	&__button {
-		display: none;
+		/*display: none;*/
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		@include bp480-block() {
+			flex-grow: 0;
+			margin-right: 15px;
+			margin-left: auto;
+		}
 		@include bp994-block() {
-			display: flex;
 			min-width: 170px;
 			flex-direction: row-reverse;
+			order: 3;
 		}
 	}
 }
