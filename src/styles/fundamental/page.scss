@@ -7,6 +7,10 @@
 	&__section {
 		padding-top: 30px;
 		padding-bottom: 30px;
+		margin-bottom: 80px;
+		@include bp994-block() {
+			margin-bottom: 100px;
+		}
 	}
 	&__footer {
 		//background-color: $color_pale;

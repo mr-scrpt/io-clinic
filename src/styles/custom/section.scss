@@ -1,0 +1,10 @@
+.section {
+	&__title {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 20px;
+		@include bp994-block() {
+			margin-bottom: 60px;
+		}
+	}
+}

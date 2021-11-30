@@ -1,0 +1,15 @@
+<div class="work-list">
+	<div class="work-list__inner">
+		{% for item in work.work_list %}
+			<div class="work-list__item work-item">
+				<div class="work-item__inner">
+					<div class="work-item__imgbox">
+						<img src="./img/content/{{item.img}}.jpg" alt="{{item.name}}" class="work-item__img img">
+					</div>
+
+					<div class="work-item__title">{{item.title}}</div>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
