@@ -4,7 +4,7 @@ $(document).ready(() => {
 	$inputs.on("focus", (elem) => {
 		const $input = $(elem.target).closest(".input");
 		const $name = $input.find(".input__name");
-		$name.hide();
+		$name.fadeOut();
 	});
 
 	$inputs.on("blur", (elem) => {
@@ -14,7 +14,7 @@ $(document).ready(() => {
 		const $input = $(elem.target).closest(".input");
 		const $name = $input.find(".input__name");
 		if (!$inputControl.val()) {
-			$name.show();
+			$name.fadeIn();
 		}
 	});
 });
