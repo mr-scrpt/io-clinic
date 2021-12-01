@@ -6,4 +6,6 @@ exports.data = {
 	social: JSON.parse(readFileSync("./src/data/social.json", "utf8")),
 	work: JSON.parse(readFileSync("./src/data/work.json", "utf8")),
 	benefits: JSON.parse(readFileSync("./src/data/benefits.json", "utf8")),
+	reviews: JSON.parse(readFileSync("./src/data/reviews.json", "utf8")),
+	faq: JSON.parse(readFileSync("./src/data/faq.json", "utf8")),
 };

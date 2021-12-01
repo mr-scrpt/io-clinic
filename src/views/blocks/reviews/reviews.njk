@@ -1,0 +1,7 @@
+<div class="reviews">
+	<div class="reviews__inner layout__wrap">
+		{% for item in reviews.reviews_list %}
+			{% include "blocks/reviews/reviews-item.njk" %}
+		{% endfor %}
+	</div>
+</div>

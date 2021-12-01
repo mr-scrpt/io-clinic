@@ -38,6 +38,22 @@
 
 	{# ===================================== #}
 
+	{% set inject = {
+		title: "Отзывы",
+		pageSectionClass: "page__reviews"
+	} %}
+	{% include "blocks/sections/reviews-section.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {
+		title: "FAQ",
+		pageSectionClass: "page__faq"
+	} %}
+	{% include "blocks/sections/faq-section.njk" %}
+
+	{# ===================================== #}
+
 	{% set inject = {} %}
 
 	{% include "blocks/footer/footer.njk" %}
