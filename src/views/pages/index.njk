@@ -3,27 +3,40 @@
 {% block main %}
 
 	{% include "blocks/header/header.njk" %}
-	{#{% include "blocks/banner/banner.njk" %}#}
-	{% set inject = {
-		pageSectionClass: "page__banner"
-	} %}
-	{% include "blocks/sections/banner.njk" %}
+
+	{# ===================================== #}
+
 	{% set inject = {
 		title: "Что мы делаем?",
 		pageSectionClass: "page__banner"
 
 	} %}
+	{% include "blocks/sections/banner-section.njk" %}
+
+	{# ===================================== #}
+
 	{% set inject = {
-		title: "Подарочные сертификаты?",
+		title: "Что мы делаем??",
 		pageSectionClass: "page__work-list"
 	} %}
-	{% include "blocks/sections/work-list.njk" %}
+	{% include "blocks/sections/work-list-section.njk" %}
+
+	{# ===================================== #}
+	{% set inject = {
+		title: "Наши преимущества",
+		pageSectionClass: "page__work-list"
+	} %}
+	{% include "blocks/sections/benefits-section.njk" %}
+
+	{# ===================================== #}
 
 	{% set inject = {
 		title: "Подарочные сертификаты?",
 		pageSectionClass: "page__present"
 	} %}
-	{% include "blocks/sections/present.njk" %}
+	{% include "blocks/sections/present-section.njk" %}
+
+	{# ===================================== #}
 
 	{% set inject = {} %}
 
