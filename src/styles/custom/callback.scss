@@ -1,0 +1,11 @@
+.callback {
+	&__inner {
+		display: flex;
+		justify-content: center;
+	}
+
+	&__form {
+		width: 100%;
+		max-width: 650px;
+	}
+}
