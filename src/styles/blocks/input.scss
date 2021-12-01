@@ -21,6 +21,7 @@
 	font: inherit;
 	line-height: inherit;
 	position: relative;
+	z-index: 2;
 	display: inline-block;
 	box-sizing: border-box;
 	padding: 0;
@@ -28,6 +29,17 @@
 	outline: none;
 	background: none;
 	color: $color_gray_dark;
+}
+
+.input .input__name {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	transform: translateY(-50%);
+	z-index: 1;
+	font-size: 16px;
+	line-height: 20px;
 }
 
 /*Виды полей*/
