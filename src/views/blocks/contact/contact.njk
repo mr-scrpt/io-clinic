@@ -1,0 +1,32 @@
+<div class="contact">
+	<div class="contact__inner">
+		<div class="contact__info">
+			<div class="contact__cell">
+
+				<div class="contact__box">
+					<div class="contact__title">Адрес:</div>
+					<div class="contact__line">Кловский спуск, 6, Київ, 01021</div>
+				</div>
+				<div class="contact__box">
+					<div class="contact__title">Время работы:</div>
+					<div class="contact__line">Пн - Пт: с 9 до 19:00</div>
+					<div class="contact__line">Суббота: с 9 до 14:00</div>
+					<div class="contact__line">Воскресенье: выходной</div>
+				</div>
+				<div class="contact__box">
+					<div class="contact__title">Электронная почта:</div>
+					<a
+						href="mailto:io.clinic@gmail.comio.clinic@gmail.com"
+						class="contact__line contact__mail link"
+					>io.clinic@gmail.com</a>
+				</div>
+			</div>
+		</div>
+
+		{% set inject = {
+		parentClass: "contact__map"
+		} %}
+		{% include "blocks/map/map.njk" %}
+	</div>
+
+</div>

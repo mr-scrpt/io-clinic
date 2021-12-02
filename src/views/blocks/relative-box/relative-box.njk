@@ -1,0 +1,9 @@
+<div class="relative-box {{inject.parentClass}}">
+	<div class="relative-box__inner">
+		<div class="relative-box__ration"></div>
+		<div class="relative-box__content">
+			{% set inject = { ifarmeClass: "relative-box__content"} %}
+			{% block content %}{% endblock %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,16 @@
+{% extends "blocks/relative-box/relative-box.njk" %}
+{% block content %}
+
+<div class="map">
+	<div class="map__inner">
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9705355319907!2d30.536027615730973!3d50.441649479474066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cfa9618438cb%3A0x617a9de8e3b2cee8!2z0JrQu9C-0LLRgdC60LjQuSDRgdC_0YPRgdC6LCA2LCDQmtC40LXQsiwgMDIwMDA!5e0!3m2!1sru!2sua!4v1638424288051!5m2!1sru!2sua"
+			allowfullscreen=""
+			loading="lazy"
+			class="{{inject.ifarmeClass}}"
+		></iframe>
+
+	</div>
+</div>
+
+{% endblock %}
