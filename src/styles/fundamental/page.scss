@@ -12,6 +12,55 @@
 			margin-bottom: 100px;
 		}
 	}
+	&__banner {
+		@include bp994-block() {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 70px;
+				width: 180px;
+				height: 180px;
+				background: url("../img/deco/deco_circle_l.svg") no-repeat;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 50px;
+				width: 143px;
+				height: 234px;
+				background: url("../img/deco/deco_circle_r.svg") no-repeat;
+			}
+		}
+	}
+
+	&__benefits {
+		@include bp994-block() {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: "";
+				left: 0;
+				bottom: 70px;
+				width: 180px;
+				height: 180px;
+				background: url("../img/deco/deco_circle_l.svg") no-repeat;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: -150px;
+				width: 143px;
+				height: 234px;
+				background: url("../img/deco/deco_circle_r.svg") no-repeat;
+			}
+		}
+	}
 	&__footer {
 		//background-color: $color_pale;
 	}
