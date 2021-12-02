@@ -24,7 +24,17 @@
 			}
 		}
 	}
-
-	&__block {
+	&__checkbox {
+		margin-bottom: 15px;
+		display: flex;
+		justify-content: center;
+		@include bp994-block() {
+			justify-content: flex-start;
+			margin-bottom: 25px;
+		}
+	}
+	&__submit {
+		display: flex;
+		justify-content: center;
 	}
 }
