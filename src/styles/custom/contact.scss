@@ -19,19 +19,15 @@
 			text-align: left;
 			justify-content: flex-start;
 			align-items: center;
-		}
-		&:after {
-			position: absolute;
-			content: "";
-			background: url("../img/deco/deco_flower.png") no-repeat;
-			/*width: 188px;
-			height: 205px;*/
-			/*width: 100%;
-			height: 100%;*/
-			width: 234px;
-			height: 245px;
-			right: 15%;
-			bottom: 0;
+			&:after {
+				position: absolute;
+				content: "";
+				background: url("../img/deco/deco_flower.png") no-repeat;
+				width: 234px;
+				height: 245px;
+				right: 15%;
+				bottom: 0;
+			}
 		}
 	}
 

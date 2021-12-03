@@ -7,4 +7,8 @@
 			margin-bottom: 60px;
 		}
 	}
+	&__inner {
+		position: relative;
+		z-index: 1;
+	}
 }
