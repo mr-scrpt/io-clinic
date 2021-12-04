@@ -29,11 +29,13 @@
 @import "./blocks/relative-box.scss";
 @import "./blocks/block-s.scss";
 
+/* Навигация */
+@import "./custom/nav/menu-m.scss";
+@import "./custom/nav/menu-footer.scss";
+
 /* Блоки Верстки */
 @import "./logo.scss";
 @import "./custom/social.scss";
-/* Навигация */
-@import "./custom/nav/menu-m.scss";
 @import "./custom/banner.scss";
 @import "./custom/section.scss";
 @import "./custom/work-list.scss";

@@ -1,0 +1,23 @@
+.menu-footer {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		@include bp768-block() {
+			flex-direction: row;
+		}
+	}
+	&__item {
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 28px;
+		color: $color_black_light;
+		@include bp768-block() {
+			padding: 10px;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+	}
+
+	&__item-name {
+	}
+}

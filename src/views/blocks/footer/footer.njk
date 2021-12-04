@@ -1,6 +1,7 @@
 <footer class="footer page__footer">
-	<div class="footer__inner layout__wrap">
-		<div class="footer__row">
+	<div class="footer__inner">
+
+		<div class="footer__row layout__wrap">
 			<div class="footer__logo">
 				{% include "blocks/logo/logo.njk" %}
 			</div>
@@ -10,6 +11,11 @@
 				{% include "blocks/social/social-list.njk" %}
 			</div>
 		</div>
-		<div class="footer__row"></div>
+
+		<div class="footer__row deco__line-footer">
+			<div class="footer__nav layout__wrap">
+				{% include "blocks/menu/menu-footer.njk" %}
+			</div>
+		</div>
 	</div>
 </footer>

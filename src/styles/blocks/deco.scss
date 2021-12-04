@@ -2,4 +2,9 @@
 	&__star {
 		color: red;
 	}
+	&__line-footer {
+		@include bp768-block() {
+			border-top: 1px solid $color_pink_light;
+		}
+	}
 }

@@ -4,7 +4,7 @@
 			<div class="menu-m__controller-icon {{inject.iconSandwichClass}}"></div>
 
 		</div>
-		<div class="block-s__body menu-m__list menu-m__list">
+		<nav class="block-s__body menu-m__list menu-m__list">
 			{% for item in inject.listData %}
 				{% include "blocks/menu/" + inject.menuItemTpl + ".njk" %}
 			{% endfor %}
@@ -15,7 +15,7 @@
 				}%}
 				{% include "blocks/social/social-list.njk" %}
 			</div>
-		</div>
+		</nav>
 
 	</div>
 </div>
