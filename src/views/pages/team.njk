@@ -14,6 +14,22 @@
 
 	{# ===================================== #}
 
+	{% set inject = {
+		title: "Отзывы",
+		pageSectionClass: "page__reviews"
+	} %}
+	{% include "blocks/sections/reviews-section.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {
+		title: "Записаться на приём",
+		pageSectionClass: "page__callback"
+	} %}
+	{% include "blocks/sections/callback-section.njk" %}
+
+	{# ===================================== #}
+
 	{% set inject = {} %}
 
 	{% include "blocks/footer/footer.njk" %}
