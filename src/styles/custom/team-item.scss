@@ -1,0 +1,9 @@
+.team {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+		margin-bottom: 100px;
+	}
+}

@@ -1,0 +1,21 @@
+{% extends "layouts/layout.njk" %}
+
+{% block main %}
+
+	{% include "blocks/header/header.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {
+		title: "Наша команда",
+		pageSectionClass: "page__work-list"
+	} %}
+	{% include "blocks/sections/team-section.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {} %}
+
+	{% include "blocks/footer/footer.njk" %}
+
+{% endblock %}

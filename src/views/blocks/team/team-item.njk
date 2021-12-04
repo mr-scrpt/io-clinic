@@ -1,0 +1,36 @@
+<div class="team-item team__item">
+	<div class="team-item__inner">
+		<div class="team-item__imgbox">
+			<img src="./img/team/{{item.img}}.jpg" alt="" class="team-item__img img">
+			<div class="team-item__name">{{item.name}}</div>
+		</div>
+		<div class="team-item__info">
+			<div class="team-item__title">{{item.title}}</div>
+			<div class="team-item__about">{{item.about}}</div>
+
+			{% if item.skills %}
+				<div class="team-item__skills">
+					<div class="team-item__skills-title">Специализируется на:</div>
+					{% for skill in item.skills %}
+						<div class="team-item__skill">- {{skill}}</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+
+			{% if item.methods %}
+				<div class="team-item__methods">
+					<div class="team-item__methods-title">Рабочие техники:</div>
+					{% for method in item.methods %}
+						<div class="team-item__method">- {{method}}</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+
+			<div class="team-item__button">
+				<button class="button button_size_s">
+					<div class="button__text">Записаться на прием</div>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
