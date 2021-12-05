@@ -1,0 +1,9 @@
+<div class="programs">
+
+	<div class="programs__inner layout__wrap">
+
+		{% for program in programs.program_list %}
+			{% include "blocks/programs/program-item.njk" %}
+		{% endfor %}
+	</div>
+</div>

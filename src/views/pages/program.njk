@@ -1,0 +1,36 @@
+{% extends "layouts/layout.njk" %}
+
+{% block main %}
+
+	{% include "blocks/header/header.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {
+		title: "Авторские программы для Вашей красоты",
+		pageSectionClass: "page__program"
+	} %}
+	{% include "blocks/sections/programs-section.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {
+		title: "Контакты",
+		pageSectionClass: "page__contact"
+	} %}
+	{% include "blocks/sections/contact-section.njk" %}
+	{# ===================================== #}
+
+	{% set inject = {
+		title: "Записаться на приём",
+		pageSectionClass: "page__callback"
+	} %}
+	{% include "blocks/sections/callback-section.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {} %}
+
+	{% include "blocks/footer/footer.njk" %}
+
+{% endblock %}

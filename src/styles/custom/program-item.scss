@@ -1,0 +1,15 @@
+.programs {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+	&__item {
+		margin-bottom: 100px;
+		/*@include bp994-block(){
+			margin-bottom: 100px;
+		}*/
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}

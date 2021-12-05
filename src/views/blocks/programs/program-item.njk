@@ -1,0 +1,20 @@
+<div class="programs__item program-item">
+	<div class="program-item__inner">
+		<div class="program-item__imgbox">
+			<img src="./img/program/{{program.img}}.jpg" alt="" class="program-item__img img">
+		</div>
+		<div class="program-item__info">
+			<div class="program-item__title">{{program.name}}</div>
+			<div class="program-item__list">
+				{% for item in program.list %}
+					<li class="program-item__item">{{item}}</li>
+				{% endfor %}
+			</div>
+			<div class="program-item__button">
+				<button class="button button_size_s">
+					<div class="button__text">Записаться</div>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
