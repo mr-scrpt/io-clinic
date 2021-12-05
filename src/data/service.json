@@ -1,0 +1,71 @@
+{
+	"service_list": [
+		{
+			"name": "HydraFacial (базовая программа)",
+			"cost": "1600 грн",
+			"time": "40 мин"
+		},
+		{
+			"name": "HydraFacial (глубокое очищение)",
+			"cost": "1600 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial (выход в свет)",
+			"cost": "1600 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial (омоложение)",
+			"cost": "2500 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial + маска по типу кожи",
+			"cost": "2200 грн",
+			"time": "60 мин"
+		},
+		{ "name": "HydraFacial (спина)", "cost": "3300 грн", "time": "60 мин" },
+		{
+			"name": "HydraFacial + Медовый энзинный уход (IS Clinical)",
+			"cost": "2900 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial + Prophilo",
+			"cost": "1600 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial (лицо, шея, декольте)",
+			"cost": "3000 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial + механическая чистка",
+			"cost": "2900 грн",
+			"time": "90 мин"
+		},
+		{
+			"name": "HydraFacial + PRX-t33",
+			"cost": "2900 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial + BioRePeel",
+			"cost": "2900 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial + RRS Long",
+			"cost": "6900 грн",
+			"time": "60 мин"
+		},
+		{
+			"name": "HydraFacial + фотоомоложение Lumecca",
+			"cost": "4200 грн",
+			"time": "60 мин",
+			"options": ["Сыворотка: 500грн", "Пилинг: 500грн"]
+		}
+	]
+}

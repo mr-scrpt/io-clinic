@@ -1,0 +1,18 @@
+<div class="service">
+	<div class="service__inner">
+		<div class="service__title">Hydra Facial MD</div>
+		<div class="service__box">
+			<div class="service__ill">
+				<div class="service__imgbox">
+					<img src="./img/service/service.jpg" alt="" class="service__img img">
+				</div>
+				<div class="service__text">Новое слово в области аппаратной косметологии. Очищает кожу, удаляет ороговевший слой клеток, а также, увлажняет кожные покровы. Ваша кожа будет сиять!</div>
+			</div>
+			<div class="service__list">
+				{% for service in service.service_list %}
+					{% include "blocks/service/service-item.njk" %}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>

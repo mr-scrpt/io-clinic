@@ -9,4 +9,5 @@ exports.data = {
 	reviews: JSON.parse(readFileSync("./src/data/reviews.json", "utf8")),
 	faq: JSON.parse(readFileSync("./src/data/faq.json", "utf8")),
 	programs: JSON.parse(readFileSync("./src/data/programs.json", "utf8")),
+	service: JSON.parse(readFileSync("./src/data/service.json", "utf8")),
 };
