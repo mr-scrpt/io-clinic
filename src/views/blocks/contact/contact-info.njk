@@ -1,0 +1,22 @@
+<div class="contact-info">
+	<div class="contact-info__inner">
+		<div class="contact-info__row layout__wrap">
+			{% set inject = {
+			parentClass: "contact-info__data"
+			} %}
+			{% include "blocks/contact/contact-data.njk" %}
+
+			{% set inject = {
+			parentClass: "contact-info__callback"
+			} %}
+			{% include "blocks/callback/callback.njk" %}
+		</div>
+		<div class="contact-info__flat layout__flat">
+			{% set inject = {
+			parentClass: "contact-info__map"
+			} %}
+			{% include "blocks/map/map.njk" %}
+		</div>
+
+	</div>
+</div>

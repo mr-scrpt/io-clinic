@@ -1,0 +1,29 @@
+.contact-data {
+	&__box {
+		margin-bottom: 35px;
+	}
+
+	&__title {
+		font-size: 14px;
+		line-height: 18px;
+		font-weight: 500;
+		margin-bottom: 15px;
+		@include bp994-block() {
+			font-size: 16px;
+		}
+	}
+
+	&__line {
+		font-size: 10px;
+		line-height: 15px;
+		font-weight: 300;
+		@include bp994-block() {
+			font-size: 16px;
+			line-height: 22px;
+		}
+	}
+
+	&__mail {
+		color: $color_pink;
+	}
+}

@@ -1,0 +1,19 @@
+{% extends "layouts/layout.njk" %}
+
+{% block main %}
+
+	{% include "blocks/header/header.njk" %}
+
+	{# ===================================== #}
+	{% set inject = {
+		title: "Контакты",
+		pageSectionClass: "page__contact"
+	} %}
+	{% include "blocks/sections/contact-info-section.njk" %}
+	{# ===================================== #}
+
+	{% set inject = {} %}
+
+	{% include "blocks/footer/footer.njk" %}
+
+{% endblock %}

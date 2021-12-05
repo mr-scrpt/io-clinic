@@ -7,7 +7,7 @@
 		}
 	}
 
-	&__info {
+	&__data {
 		position: relative;
 		text-align: center;
 		display: flex;
@@ -31,7 +31,7 @@
 		}
 	}
 
-	&__box {
+	/*&__box {
 		margin-bottom: 35px;
 	}
 
@@ -51,12 +51,13 @@
 		font-weight: 300;
 		@include bp994-block() {
 			font-size: 16px;
+			line-height: 22px;
 		}
 	}
 
 	&__mail {
 		color: $color_pink;
-	}
+	}*/
 
 	&__map {
 		@include bp994-block() {

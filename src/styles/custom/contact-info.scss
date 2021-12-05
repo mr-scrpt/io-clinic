@@ -1,0 +1,43 @@
+.contact-info {
+	&__inner {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__row {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 100px;
+		/*@include bp994-block() {
+			width: 50%;
+		}*/
+	}
+
+	&__flat {
+		width: 100%;
+
+		/*@include bp994-block() {
+			width: 50%;
+		}*/
+	}
+	&__data {
+		width: 100%;
+		position: relative;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		@include bp994-block() {
+			width: 50%;
+			text-align: left;
+			justify-content: flex-start;
+			align-items: center;
+		}
+	}
+	&__callback {
+		width: 100%;
+		@include bp994-block() {
+			width: 50%;
+		}
+	}
+}
