@@ -1,7 +1,11 @@
+{% set idline=''%}
+{% if inject.anchor %}
+	{% set idline = ["id=", inject.anchor] | join%}
+{% endif %}
 <section class="section {{inject.pageSectionClass}} page__section">
 	<div class="section__inner layout__flat {{inject.sectionInnerClass}}">
 		{% if inject.title %}
-			<div class="section__title title">
+			<div class="section__title title" {{idline}}>
 				<div class="title__main">{{inject.title}}</div>
 			</div>
 		{% endif %}

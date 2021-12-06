@@ -61,6 +61,137 @@
 			}
 		}
 	}
+
+	&__work-list {
+		@include bp994-block() {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 300px;
+				width: 180px;
+				height: 180px;
+				background: url("../img/deco/deco_circle_l.svg") no-repeat;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 20px;
+				width: 143px;
+				height: 234px;
+				background: url("../img/deco/deco_circle_r.svg") no-repeat;
+			}
+		}
+	}
+
+	&__reviews {
+		@include bp994-block() {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 300px;
+				width: 180px;
+				height: 180px;
+				background: url("../img/deco/deco_circle_l.svg") no-repeat;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 20px;
+				width: 143px;
+				height: 234px;
+				background: url("../img/deco/deco_circle_r.svg") no-repeat;
+			}
+		}
+	}
+
+	&__program {
+		@include bp994-block() {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 50%;
+				width: 180px;
+				height: 180px;
+				background: url("../img/deco/deco_circle_l.svg") no-repeat;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 220px;
+				width: 143px;
+				height: 234px;
+				background: url("../img/deco/deco_circle_r.svg") no-repeat;
+			}
+		}
+	}
+
+	&__contact {
+		@include bp994-block() {
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: -120px;
+				width: 143px;
+				height: 234px;
+				background: url("../img/deco/deco_circle_r.svg") no-repeat;
+			}
+		}
+	}
+	&__contact-page {
+		@include bp994-block() {
+			position: relative;
+
+			&::before {
+				position: absolute;
+				content: "";
+				left: 0;
+				top: 300px;
+				width: 180px;
+				height: 180px;
+				background: url("../img/deco/deco_circle_l.svg") no-repeat;
+			}
+			&::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 50px;
+				width: 143px;
+				height: 234px;
+				background: url("../img/deco/deco_circle_r.svg") no-repeat;
+			}
+		}
+	}
+
+	&__service {
+		@include bp994-block() {
+			position: relative;
+
+			&::after {
+				position: absolute;
+				content: "";
+				right: 0;
+				top: 50px;
+				width: 143px;
+				height: 234px;
+				background: url("../img/deco/deco_circle_r.svg") no-repeat;
+			}
+		}
+	}
 	&__footer {
 		//background-color: $color_pale;
 	}

@@ -1,22 +1,3 @@
-.team-people {
-	&__inner {
-		display: flex;
-		flex-direction: column;
-		@include bp768-block() {
-			flex-wrap: wrap;
-			flex-direction: row;
-			justify-content: center;
-		}
-	}
-
-	&__item {
-		margin-bottom: 15px;
-		@include bp994-block() {
-			margin-left: 15px;
-			margin-right: 15px;
-		}
-	}
-}
 .people {
 	&__inner {
 		display: flex;
