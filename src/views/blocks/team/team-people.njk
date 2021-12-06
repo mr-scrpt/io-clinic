@@ -1,0 +1,15 @@
+<div class="team-people">
+	<div class="team-people__inner">
+		{% for item in team.team_list %}
+			<div class="team-people__item people">
+				<div class="people__inner">
+					<div class="people__imgbox">
+						<img src="./img/team/{{item.img}}_white.jpg" alt="" class="people__img img">
+					</div>
+					<div class="people__name">{{item.name_simple}}</div>
+				</div>
+
+			</div>
+		{% endfor %}
+	</div>
+</div>
