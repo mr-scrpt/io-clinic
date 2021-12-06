@@ -3,69 +3,82 @@
 		{
 			"name": "HydraFacial (базовая программа)",
 			"cost": "1600 грн",
-			"time": "40 мин"
+			"time": "40 мин",
+			"isShow": true
 		},
 		{
 			"name": "HydraFacial (глубокое очищение)",
 			"cost": "1600 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": true
 		},
 		{
 			"name": "HydraFacial (выход в свет)",
 			"cost": "1600 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": true
 		},
 		{
 			"name": "HydraFacial (омоложение)",
 			"cost": "2500 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": true
 		},
 		{
 			"name": "HydraFacial + маска по типу кожи",
 			"cost": "2200 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": false
 		},
 		{ "name": "HydraFacial (спина)", "cost": "3300 грн", "time": "60 мин" },
 		{
 			"name": "HydraFacial + Медовый энзинный уход (IS Clinical)",
 			"cost": "2900 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": false
 		},
 		{
 			"name": "HydraFacial + Prophilo",
 			"cost": "1600 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": false
 		},
 		{
 			"name": "HydraFacial (лицо, шея, декольте)",
 			"cost": "3000 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": false
 		},
 		{
 			"name": "HydraFacial + механическая чистка",
 			"cost": "2900 грн",
-			"time": "90 мин"
+			"time": "90 мин",
+			"isShow": false
 		},
 		{
 			"name": "HydraFacial + PRX-t33",
 			"cost": "2900 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": false
 		},
 		{
 			"name": "HydraFacial + BioRePeel",
 			"cost": "2900 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": false
 		},
 		{
 			"name": "HydraFacial + RRS Long",
 			"cost": "6900 грн",
-			"time": "60 мин"
+			"time": "60 мин",
+			"isShow": false
 		},
 		{
 			"name": "HydraFacial + фотоомоложение Lumecca",
 			"cost": "4200 грн",
 			"time": "60 мин",
-			"options": ["Сыворотка: 500грн", "Пилинг: 500грн"]
+			"options": ["Сыворотка: 500грн", "Пилинг: 500грн"],
+			"isShow": false
 		}
 	]
 }

@@ -4,15 +4,42 @@
 		<div class="service__box">
 			<div class="service__ill">
 				<div class="service__imgbox">
-					<img src="./img/service/service.jpg" alt="" class="service__img img">
+					<img
+						src="./img/service/service.jpg"
+						alt=""
+						class="service__img img"
+					>
 				</div>
-				<div class="service__text">Новое слово в области аппаратной косметологии. Очищает кожу, удаляет ороговевший слой клеток, а также, увлажняет кожные покровы. Ваша кожа будет сиять!</div>
+				<div class="service__text">Новое слово в области аппаратной косметологии. Очищает кожу, удаляет
+					ороговевший слой клеток, а также, увлажняет кожные покровы. Ваша кожа будет сиять!</div>
 			</div>
-			<div class="service__list">
-				{% for service in service.service_list %}
-					{% include "blocks/service/service-item.njk" %}
-				{% endfor %}
+			<div class="service__listbox">
+				<div class="service__list">
+					<div class="service__list-short">
+						{% for service in service.service_list %}
+							{% if service.isShow %}
+								{% include "blocks/service/service-item.njk" %}
+							{% endif %}
+
+						{% endfor %}
+					</div>
+					<div class="service__list-long">
+						{% for service in service.service_list %}
+							{% if service.isShow == false %}
+								{% include "blocks/service/service-item.njk" %}
+							{% endif %}
+
+						{% endfor %}
+					</div>
+
+				</div>
+				<div class="service__button">
+					<button class="button button_size_s show-more">
+						<div class="button__text">Ещё</div>
+					</button>
+				</div>
 			</div>
+
 		</div>
 	</div>
 </div>

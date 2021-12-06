@@ -50,13 +50,17 @@
 		}
 	}
 
-	&__list {
+	&__listbox {
 		display: flex;
 		flex-direction: column;
 		@include bp994-block() {
 			flex-grow: 1;
 			padding-left: 30px;
 		}
+	}
+
+	&__list-long {
+		display: none;
 	}
 
 	&__item {
