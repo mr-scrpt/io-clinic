@@ -38,6 +38,7 @@ $(document).ready(() => {
 		const swiper = new Swiper(swiperItem, {
 			slidesPerView: 1,
 			spaceBetween: 30,
+			autoHeight: true,
 			pagination: {
 				el: pagination,
 				type: "bullets",

@@ -21,4 +21,7 @@
 	& .swiper-pagination-bullet-active {
 		background: $color_pink;
 	}
+	& .swiper-slide {
+		height: 100%;
+	}
 }

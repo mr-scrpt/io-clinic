@@ -5,5 +5,8 @@
 	}
 	&__item {
 		margin-bottom: 100px;
+		&:last-child {
+			margin-bottom: 0;
+		}
 	}
 }
