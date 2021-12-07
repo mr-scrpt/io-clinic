@@ -1,7 +1,16 @@
-<div class="reviews">
-	<div class="reviews__inner">
-		{% for item in reviews.reviews_list %}
-			{% include "blocks/reviews/reviews-item.njk" %}
-		{% endfor %}
+{#<div class="reviews">
+	<div class="reviews__inner swiper">
+		<div class="swiper-wrapper">
+			{% set inject = {
+			parentClass: "reviews__item swiper-slide"
+		}%}
+			{% for item in reviews.reviews_list %}
+				{% include "blocks/reviews/reviews-item.njk" %}
+			{% endfor %}
+		</div>
+
 	</div>
-</div>
+	<div class="swiper-pagination slider__pagination"></div>
+	<div class="swiper-button-prev slider__nav slider__nav_prev"></div>
+	<div class="swiper-button-next slider__nav slider__nav_next"></div>
+</div>#}

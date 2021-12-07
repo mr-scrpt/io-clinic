@@ -2,19 +2,19 @@
 	"menu_info": [
 		{
 			"name": "О нас",
-			"href": "#"
+			"href": "/team.html"
 		},
 		{
 			"name": "Программы",
-			"href": "#"
+			"href": "/program.html"
 		},
 		{
 			"name": "Услуги",
-			"href": "#"
+			"href": "/service.html"
 		},
 		{
 			"name": "Контакты",
-			"href": "#"
+			"href": "/contact.html"
 		}
 	]
 }

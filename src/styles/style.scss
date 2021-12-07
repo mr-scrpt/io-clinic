@@ -1,5 +1,6 @@
 /* Библиотеки */
 @import "./lib/smart-grid.scss";
+@import "./lib/swiper.scss";
 
 /* INIT */
 @import "./preset/reset.scss";
@@ -59,6 +60,7 @@
 @import "./custom/service-item.scss";
 @import "./custom/team-people.scss";
 @import "./custom/people.scss";
+@import "./custom/swiper.scss";
 
 * {
 	box-sizing: border-box;

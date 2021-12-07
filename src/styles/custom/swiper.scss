@@ -1,0 +1,24 @@
+.slider {
+	position: relative;
+	& .swiper-button-prev {
+		left: -40px;
+		color: $color_pink;
+	}
+	& .swiper-button-next {
+		right: -40px;
+		color: $color_pink;
+	}
+	&__nav {
+		display: none;
+		@include bp1280-block() {
+			display: block;
+		}
+	}
+	& .swiper-pagination {
+		bottom: -50px;
+	}
+
+	& .swiper-pagination-bullet-active {
+		background: $color_pink;
+	}
+}
