@@ -1,15 +1,18 @@
 .slider-vertical {
 	position: relative;
 	&__nav_next {
-		right: 50%;
-		top: 0;
-		transform: translate(50%, -100%) rotate(270deg);
+		color: $color_pink;
+		left: 50%;
+		bottom: -20px;
+		top: auto;
+		transform: translate(-50%, 100%) rotate(90deg);
 	}
 
 	&__nav_prev {
-		left: 50%;
-		bottom: 0;
-		top: auto;
-		transform: translate(-50%, 100%) rotate(270deg);
+		color: $color_pink;
+		right: 50%;
+		left: auto;
+		top: 0;
+		transform: translate(50%, -100%) rotate(90deg);
 	}
 }

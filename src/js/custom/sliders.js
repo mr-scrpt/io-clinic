@@ -71,13 +71,14 @@ const getOptionWork = (navNext, navPrev) => ({
 		nextEl: navNext,
 		prevEl: navPrev,
 	},
-
-	994: {
-		slidesPerView: 2,
-		grid: {
-			rows: 2,
-			/*column: 2,*/
-			fill: "row",
+	breakpoints: {
+		480: {
+			slidesPerView: 2,
+			grid: {
+				rows: 2,
+				/*column: 2,*/
+				fill: "row",
+			},
 		},
 	},
 });
