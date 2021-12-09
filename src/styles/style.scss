@@ -41,7 +41,9 @@
 /*@import "./custom/banner.scss";*/
 @import "./custom/section.scss";
 @import "./custom/work-list.scss";
+@import "./custom/worklist.scss";
 @import "./custom/work-item.scss";
+@import "./custom/workitem.scss";
 @import "./custom/present.scss";
 @import "./custom/benefits.scss";
 @import "./custom/benefits-item.scss";
@@ -63,6 +65,7 @@
 @import "./custom/people.scss";
 @import "./custom/swiper.scss";
 @import "./custom/slider-m.scss";
+@import "./custom/slider-vertical.scss";
 
 * {
 	box-sizing: border-box;

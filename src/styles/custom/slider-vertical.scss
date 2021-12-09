@@ -1,0 +1,15 @@
+.slider-vertical {
+	position: relative;
+	&__nav_next {
+		right: 50%;
+		top: 0;
+		transform: translate(50%, -100%) rotate(270deg);
+	}
+
+	&__nav_prev {
+		left: 50%;
+		bottom: 0;
+		top: auto;
+		transform: translate(-50%, 100%) rotate(270deg);
+	}
+}

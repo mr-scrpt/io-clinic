@@ -1,0 +1,31 @@
+<div class="worklist slider-vertical">
+	<div class="swiper-button-prev slider-vertical__nav slider-vertical__nav_prev"></div>
+	<div
+		class="worklist__inner swiper"
+		data-option="optionWork"
+	>
+		<div class="swiper-wrapper">
+			{% for item in work.work_list %}
+				<div class="worklist__item workitem swiper-slide">
+					<div class="workitem__inner">
+						<div class="workitem__imgbox">
+							<img
+							src="./img/content/{{item.img}}.jpg"
+							alt="{{item.name}}"
+							class="workitem__img img"
+						>
+						</div>
+
+						<div class="workitem__title">{{item.title}}</div>
+					</div>
+				</div>
+			{% endfor %}
+
+		</div>
+
+	</div>
+	{#<div class="swiper-pagination slider-vertical__pagination"></div>#}
+
+	<div class="swiper-button-next slider-vertical__nav slider-vertical__nav_next"></div>
+
+</div>
