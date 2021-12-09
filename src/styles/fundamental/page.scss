@@ -12,7 +12,13 @@
 			margin-bottom: 100px;
 		}
 	}
-	&__banner {
+	&__row {
+		margin-bottom: 80px;
+		@include bp994-block() {
+			margin-bottom: 100px;
+		}
+	}
+	/*&__banner {
 		@include bp994-block() {
 			position: relative;
 
@@ -35,7 +41,7 @@
 				background: url("../img/deco/deco_circle_r.svg") no-repeat;
 			}
 		}
-	}
+	}*/
 
 	&__benefits {
 		@include bp994-block() {

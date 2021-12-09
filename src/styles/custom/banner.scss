@@ -12,6 +12,7 @@
 	&__slider {
 		background-color: pink;
 		min-height: 300px;
+		display: flex;
 		@include bp994-block() {
 			width: calc(100% - 480px);
 			order: 1;

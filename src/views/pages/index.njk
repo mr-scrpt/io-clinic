@@ -6,12 +6,15 @@
 
 	{# ===================================== #}
 
-	{% set inject = {
-		title: "Что мы делаем?",
+	{#{% set inject = {
 		pageSectionClass: "page__banner"
-
 	} %}
-	{% include "blocks/sections/banner-section.njk" %}
+	{% include "blocks/sections/banner-section.njk" %}#}
+
+	{% set inject = {
+		pageSectionClass: "page__banner"
+	} %}
+	{% include "blocks/sections/video-section.njk" %}
 
 	{# ===================================== #}
 

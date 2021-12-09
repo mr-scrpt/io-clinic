@@ -1,0 +1,40 @@
+<div class="video">
+	<div class="video__inner">
+
+		<video
+			class="video__player"
+			preload="auto"
+			poster="./img/poster.jpg"
+			autoplay
+			muted
+			loop
+		>
+			<source
+				src="./video/video.mp4"
+				type="video/mp4"
+			>
+			<source
+				src="./video/video.webm"
+				type="video/webm"
+			>
+			Ваш браузер не поддерживает видео
+		</video>
+
+		<div class="video__main">
+			<div class="video__box">
+				{% set inject = {
+				parentClass: 'video__logo',
+				logoClass: 'video__logo-img'
+				}%}
+				{% include "blocks/logo/logo.njk" %}
+
+				<div class="video__title">
+
+				Мастерская<br>
+				вашей<br>
+				красоты
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

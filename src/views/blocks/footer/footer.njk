@@ -3,6 +3,10 @@
 
 		<div class="footer__row layout__wrap">
 			<div class="footer__logo">
+				{% set inject = {
+				parentClass: 'footer__logo'
+
+				}%}
 				{% include "blocks/logo/logo.njk" %}
 			</div>
 			<div class="footer__number">+38 094 000 00 10</div>

@@ -1,0 +1,41 @@
+<div class="slider-m">
+	<div class="slider-m__inner">
+
+		<div class="slider-m__prev">Prev</div>
+		<div class="slider-m__active slider-active slider">
+			<div class="slider-active__inner">
+				<div class="swiper" data-option="optionMain">
+					<div class="swiper-wrapper">
+						{% for item in work.work_list %}
+							<div class="slider-active__slide swiper-slide">
+								<img src="./img/content/{{item.img}}.jpg" alt="" class="slider-active__img img">
+							</div>
+						{% endfor %}
+
+					</div>
+				</div>
+
+			</div>
+			<div class="swiper-button-prev slider-active__nav slider-active__nav_prev slider__nav_next"></div>
+			<div class="swiper-button-next slider-active__nav slider-active__nav_next slider__nav_next"></div>
+		</div>
+		<div class="slider-m__next">Next</div>
+
+	</div>
+</div>
+
+{#<div class="slider-m__inner slider slider-main">
+		<div class="slider-center swiper" data-option="optionMain">
+			<div class="slider-center__inner swiper-wrapper">
+				{% for item in work.work_list %}
+					<div class="slider-center__slide swiper-slide">
+						<img src="./img/content/{{item.img}}.jpg" alt="" class="slider-center__img">
+					</div>
+				{% endfor %}
+
+			</div>
+		</div>
+
+		<div class="swiper-button-prev slider__nav slider__nav_prev"></div>
+		<div class="swiper-button-next slider__nav slider__nav_next"></div>
+	</div>#}

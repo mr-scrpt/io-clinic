@@ -37,7 +37,8 @@
 /* Блоки Верстки */
 @import "./logo.scss";
 @import "./custom/social.scss";
-@import "./custom/banner.scss";
+@import "./custom/video.scss";
+/*@import "./custom/banner.scss";*/
 @import "./custom/section.scss";
 @import "./custom/work-list.scss";
 @import "./custom/work-item.scss";
@@ -61,6 +62,7 @@
 @import "./custom/team-people.scss";
 @import "./custom/people.scss";
 @import "./custom/swiper.scss";
+@import "./custom/slider-m.scss";
 
 * {
 	box-sizing: border-box;
