@@ -18,6 +18,18 @@
 			margin-bottom: 100px;
 		}
 	}
+
+	&__header {
+		top: 0;
+		width: 100%;
+		position: fixed;
+		z-index: 300;
+		background-color: $color_light;
+	}
+
+	&__fix-off {
+		/*	margin-top: 100px;*/
+	}
 	/*&__banner {
 		@include bp994-block() {
 			position: relative;

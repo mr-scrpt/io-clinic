@@ -1,7 +1,10 @@
 <div class="social {{inject.parentClass}}">
 	<div class="social__inner">
 		{% asyncEach item in social.social_list %}
-		<span class="icon icon_{{item}} social__item"></span>
+		<a href="{{item.link}}" class="social__item">
+			<span class="icon icon_{{item.name}} "></span>
+		</a>
+
 		{% endeach %}
 	</div>
 </div>

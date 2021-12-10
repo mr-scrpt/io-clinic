@@ -39,9 +39,8 @@ const offsetBody = ($inner, $body, mobileSize) => {
 	const mode = checkMobileMode(mobileSize);
 	let width = getSize();
 	if (mode) {
-		console.log("-> in!");
 		const height = $inner.outerHeight();
-		console.log("-> height", height);
+
 		$body.css({ top: height });
 	} else {
 		$body.css({ top: "auto" });
@@ -60,9 +59,9 @@ const adaptiveMode = (mobileSize, $body) => {
 const controllMenu = ($controller, mainClass, mobileSize) => {
 	$controller.on("click", (e) => {
 		e.stopPropagation();
-		console.log("-> click", mobileSize);
+
 		const mode = checkMobileMode(mobileSize);
-		console.log("-> mode in", mode);
+
 		if (mode) {
 			const $currentMenu = $(e.target).closest(`.${mainClass}`);
 

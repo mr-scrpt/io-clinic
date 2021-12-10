@@ -1,3 +1,7 @@
 {
-	"social_list": ["phone", "fb", "insta"]
+	"social_list": [
+		{ "name": "phone", "link": "tel:+380940000010" },
+		{ "name": "fb", "link": "//facebook.com/IO-Clinic-332654634680110/" },
+		{ "name": "insta", "link": "//instagram.com/io_clinic/" }
+	]
 }
