@@ -18,4 +18,18 @@
 			width: calc(33.3333% - 30px);
 		}*/
 	}
+	&__nav {
+		display: none;
+		@include bp1280-block() {
+			display: block;
+		}
+		&_prev {
+			left: -40px;
+			color: $color_pink;
+		}
+		&_next {
+			right: -40px;
+			color: $color_pink;
+		}
+	}
 }

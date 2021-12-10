@@ -11,4 +11,5 @@ exports.data = {
 	faq: JSON.parse(readFileSync("./src/data/faq.json", "utf8")),
 	programs: JSON.parse(readFileSync("./src/data/programs.json", "utf8")),
 	service: JSON.parse(readFileSync("./src/data/service.json", "utf8")),
+	present: JSON.parse(readFileSync("./src/data/present.json", "utf8")),
 };

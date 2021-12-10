@@ -2,9 +2,9 @@ $(document).ready(() => {
 	/*reviews*/
 	const reviews = document.querySelector(".swiper.reviews__inner");
 	const reviewsBox = reviews.closest(".slider");
-	const reviewsNavNext = reviewsBox.querySelector(".slider__nav_next");
-	const reviewsNavPrev = reviewsBox.querySelector(".slider__nav_prev");
-	const reviewsPagination = reviewsBox.querySelector(".slider__pagination");
+	const reviewsNavNext = reviewsBox.querySelector(".reviews__nav_next");
+	const reviewsNavPrev = reviewsBox.querySelector(".reviews__nav_prev");
+	const reviewsPagination = reviewsBox.querySelector(".reviews__pagination");
 
 	const optionReviews = getOptionReviews(
 		reviewsPagination,
@@ -21,6 +21,16 @@ $(document).ready(() => {
 
 	const optionWork = getOptionWork(workNavNext, workNavPrev);
 	sliderGen(worklist, optionWork);
+
+	/*presentlist*/
+	const presentlist = document.querySelector(".swiper.present__inner");
+
+	const presentBox = presentlist.closest(".slider");
+	const presentNavNext = presentBox.querySelector(".present__nav_next");
+	const presentNavPrev = presentBox.querySelector(".present__nav_prev");
+
+	const optionPresent = getOptionPresent(presentNavNext, presentNavPrev);
+	sliderGen(presentlist, optionPresent);
 });
 
 const sliderGen = (block, option) => {
@@ -82,3 +92,24 @@ const getOptionWork = (navNext, navPrev) => ({
 		},
 	},
 });
+
+const getOptionPresent = (navNext, navPrev) => {
+	return {
+		slidesPerView: 1.6,
+		initialSlide: 1,
+		loop: true,
+		centeredSlides: true,
+		spaceBetween: 30,
+		autoHeight: true,
+		navigation: false,
+		breakpoints: {
+			994: {
+				spaceBetween: 80,
+				navigation: {
+					nextEl: navNext,
+					prevEl: navPrev,
+				},
+			},
+		},
+	};
+};

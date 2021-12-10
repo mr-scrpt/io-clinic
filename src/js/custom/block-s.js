@@ -9,7 +9,7 @@ $(document).ready(() => {
 		let mobileSize = $(item).attr("data-adaptive-width");
 		const $inner = $menu.children(`.${mainClass}__inner`);
 		const $body = $inner.children(`.${mainClass}__body`);
-		const $header = $(".header__inner");
+		const $header = $(".header__line");
 		const $controller = $menu.find(`.${mainClass}__controller`);
 		clearClassAndStyle($menu, $body, mainClass, mobileSize);
 		controllMenu($controller, mainClass, mobileSize);
@@ -41,7 +41,8 @@ const offsetBody = ($inner, $body, mobileSize) => {
 	if (mode) {
 		console.log("-> in!");
 		const height = $inner.outerHeight();
-		$body.css({ top: height + 2 });
+		console.log("-> height", height);
+		$body.css({ top: height });
 	} else {
 		$body.css({ top: "auto" });
 	}

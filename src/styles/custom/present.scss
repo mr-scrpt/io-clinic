@@ -2,6 +2,7 @@
 	&__inner {
 		display: flex;
 		justify-content: center;
+		position: relative;
 	}
 
 	&__imgbox {
@@ -11,7 +12,28 @@
 	}
 
 	&__img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
-}
-.img {
+
+	&__nav {
+		display: none;
+		color: $color_pink;
+		@include bp994-block() {
+			display: block;
+		}
+		&_prev {
+			left: 230px;
+			@include bp1280-block() {
+				left: 230px;
+			}
+		}
+		&_next {
+			right: 230px;
+			@include bp1280-block() {
+				right: 230px;
+			}
+		}
+	}
 }
