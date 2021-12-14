@@ -1,0 +1,37 @@
+{% extends "layouts/layout.njk" %}
+
+{% block main %}
+
+	{% include "blocks/header/header.njk" %}
+
+	{# ===================================== #}
+	{% set inject = {
+		title: "Программы",
+		pageSectionClass: "page__service page__fix-off"
+	} %}
+	{% include "blocks/sections/services-section.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {
+		title: "Записаться на приём",
+		pageSectionClass: "page__callback",
+		anchor: "toForm"
+	} %}
+	{% include "blocks/sections/callback-section.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {
+		title: "Отзывы",
+		pageSectionClass: "page__reviews"
+	} %}
+	{% include "blocks/sections/reviews-section.njk" %}
+
+	{# ===================================== #}
+
+	{% set inject = {} %}
+
+	{% include "blocks/footer/footer.njk" %}
+
+{% endblock %}

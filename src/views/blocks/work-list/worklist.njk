@@ -5,8 +5,11 @@
 		data-option="optionWork"
 	>
 		<div class="swiper-wrapper">
+			{% set inject = {
+			parentClass: "worklist__item swiper-slide"
+		} %}
 			{% for item in work.work_list %}
-				<div class="worklist__item workitem swiper-slide">
+				{#<div class="worklist__item workitem swiper-slide">
 					<div class="workitem__inner">
 						<div class="workitem__imgbox">
 							<img
@@ -18,7 +21,9 @@
 
 						<div class="workitem__title">{{item.title}}</div>
 					</div>
-				</div>
+				</div>#}
+
+				{% include "blocks/services/service-item.njk" %}
 			{% endfor %}
 
 		</div>
