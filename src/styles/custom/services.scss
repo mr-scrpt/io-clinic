@@ -1,0 +1,11 @@
+.services {
+	&__inner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		width: calc(50% - 30px);
+		margin: 15px;
+	}
+}

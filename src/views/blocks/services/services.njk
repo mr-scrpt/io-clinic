@@ -1,6 +1,9 @@
-<div class="services">11
+<div class="services">
 	<div class="services__inner">
-		{% for service in services.services_list %}
+		{% set inject = {
+			parentClass: "services__item"
+		} %}
+		{% for item in services.services_list %}
 
 			{% include "blocks/services/service-item.njk" %}
 
