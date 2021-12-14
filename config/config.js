@@ -14,6 +14,10 @@ const paths = {
 		src: "/fonts/*",
 		dest: "/fonts/",
 	},
+	video: {
+		src: "/video/*",
+		dest: "/video/",
+	},
 	js: {
 		lib: {
 			src: "/js/lib/*.js",

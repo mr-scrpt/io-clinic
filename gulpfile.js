@@ -9,6 +9,7 @@ const {
 	fonts,
 	reloader,
 	nunjucks,
+	video,
 } = require("./config/tasks");
 
 const watch = require("gulp-watch");
@@ -23,6 +24,7 @@ gulp.task(
 			"nunjucks",
 			"js",
 			"fonts",
+			"video",
 			"reloader"
 		),
 		() => {
@@ -37,5 +39,5 @@ gulp.task(
 
 gulp.task(
 	"build",
-	gulp.series("clean", "sass", "nunjucks", "js", "fonts", "img") //"imgProd"
+	gulp.series("clean", "sass", "nunjucks", "js", "fonts", "img", "video") //"imgProd"
 );

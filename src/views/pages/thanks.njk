@@ -1,0 +1,20 @@
+{% extends "layouts/layout.njk" %}
+
+{% block main %}
+
+	{% include "blocks/header/header.njk" %}
+
+	{# ===================================== #}
+	{% set inject = {
+		title: "Спасибо. Ваша заявка принята!",
+		pageSectionClass: "page__thank page__fix-off"
+
+	} %}
+	{% include "blocks/sections/thanks-section.njk" %}
+	{# ===================================== #}
+
+	{% set inject = {} %}
+
+	{% include "blocks/footer/footer.njk" %}
+
+{% endblock %}

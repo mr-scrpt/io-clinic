@@ -1,0 +1,42 @@
+.thanks {
+	height: 100%;
+	&__inner {
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__box {
+		max-width: 320px;
+		border: 2px solid $color_pink;
+		border-radius: 16px;
+		padding: 20px;
+		text-align: center;
+		@include bp768-block() {
+			max-width: 400px;
+			padding: 40px;
+		}
+	}
+
+	&__title {
+		font-size: 16px;
+		line-height: 22px;
+		margin-bottom: 20px;
+		@include bp768-block() {
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+
+	&__text {
+		font-size: 15px;
+		font-weight: 300;
+		line-height: 18px;
+		@include bp768-block() {
+			font-size: 16px;
+
+			line-height: 20px;
+		}
+	}
+}

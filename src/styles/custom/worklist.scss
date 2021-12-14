@@ -4,12 +4,15 @@
 	&__inner {
 		/*display: flex;*/
 		/*height: 1600px;*/
-		height: 480px;
+		/*height: 480px;*/
+		padding-bottom: 50px;
+
 		@include bp768-block() {
-			height: 640px;
+			/*height: 640px;*/
 		}
 		@include bp1280-block() {
 			height: 900px;
+			padding-bottom: 0;
 		}
 	}
 
@@ -17,6 +20,15 @@
 		@include bp480-block() {
 			height: calc((100% - 30px) / 2);
 			width: calc((100% - 30px) / 2);
+		}
+	}
+
+	&__pagination {
+		& .swiper-pagination-bullet-active {
+			background-color: $color_pink;
+		}
+		@include bp1280-block() {
+			display: none;
 		}
 	}
 }

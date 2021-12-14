@@ -6,4 +6,9 @@
 		/*color: $color_base;*/
 		cursor: pointer;
 	}
+
+	&_active {
+		color: $color_pink;
+		border-bottom: 2px solid $color_pink;
+	}
 }

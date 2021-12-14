@@ -6,13 +6,21 @@
 		bottom: -20px;
 		top: auto;
 		transform: translate(-50%, 100%) rotate(90deg);
+		display: none;
+		@include bp1280-block() {
+			display: block;
+		}
 	}
 
 	&__nav_prev {
+		display: none;
 		color: $color_pink;
 		right: 50%;
 		left: auto;
 		top: 0;
 		transform: translate(50%, -100%) rotate(90deg);
+		@include bp1280-block() {
+			display: block;
+		}
 	}
 }

@@ -18,8 +18,10 @@ $(document).ready(() => {
 	const workBox = worklist.closest(".slider-vertical");
 	const workNavNext = workBox.querySelector(".slider-vertical__nav_next");
 	const workNavPrev = workBox.querySelector(".slider-vertical__nav_prev");
-
-	const optionWork = getOptionWork(workNavNext, workNavPrev);
+	const workPagination = workBox.querySelector(
+		".slider-vertical__pagination"
+	);
+	const optionWork = getOptionWork(workPagination, workNavNext, workNavPrev);
 	sliderGen(worklist, optionWork);
 
 	/*presentlist*/
@@ -66,33 +68,39 @@ const getOptionReviews = (pagination, navNext, navPrev) => {
 	};
 };
 
-const getOptionWork = (navNext, navPrev) => ({
-	direction: "vertical",
-	slidesPerView: 2,
+const getOptionWork = (workPagination, navNext, navPrev) => ({
+	slidesPerView: 1,
 	spaceBetween: 30,
-	grid: {
-		rows: 1,
-		/*column: 2,*/
-		fill: "row",
+	autoHeight: false,
+	pagination: {
+		el: workPagination,
+		type: "bullets",
+		clickable: true,
 	},
 
-	autoHeight: false,
-	navigation: {
-		nextEl: navNext,
-		prevEl: navPrev,
-	},
 	breakpoints: {
-		480: {
+		560: {
 			slidesPerView: 2,
+		},
+		994: {
+			slidesPerView: 2.4,
+		},
+		1280: {
+			direction: "vertical",
+			slidesPerView: 2,
+			spaceBetween: 30,
 			grid: {
 				rows: 2,
 				/*column: 2,*/
 				fill: "row",
 			},
+			navigation: {
+				nextEl: navNext,
+				prevEl: navPrev,
+			},
 		},
 	},
 });
-
 const getOptionPresent = (navNext, navPrev) => {
 	return {
 		slidesPerView: 1.6,

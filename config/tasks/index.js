@@ -5,3 +5,4 @@ exports.img = require("./img");
 exports.js = require("./js");
 exports.fonts = require("./fonts");
 exports.reloader = require("./reloader");
+exports.video = require("./video");

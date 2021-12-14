@@ -4,8 +4,8 @@
 	}
 
 	&__title {
-		font-size: 14px;
-		line-height: 18px;
+		font-size: 16px;
+		line-height: 20px;
 		font-weight: 500;
 		margin-bottom: 15px;
 		@include bp994-block() {
@@ -14,8 +14,8 @@
 	}
 
 	&__line {
-		font-size: 10px;
-		line-height: 15px;
+		font-size: 14px;
+		line-height: 18px;
 		font-weight: 300;
 		@include bp994-block() {
 			font-size: 16px;

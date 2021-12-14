@@ -36,4 +36,12 @@
 			}
 		}
 	}
+	&__button {
+		display: flex;
+		justify-content: center;
+		margin: 15px 0;
+		@include bp768-block() {
+			margin: 35px 0;
+		}
+	}
 }

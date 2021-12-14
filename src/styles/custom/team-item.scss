@@ -44,7 +44,7 @@
 	}
 
 	&__title {
-		font-size: 16px;
+		font-size: 18px;
 		font-weight: 500;
 		line-height: 24px;
 		margin: 10px 0 15px;
@@ -57,8 +57,8 @@
 
 	&__about {
 		font-weight: 300;
-		font-size: 10px;
-		line-height: 15px;
+		font-size: 15px;
+		line-height: 20px;
 		margin-bottom: 15px;
 		@include bp994-block() {
 			font-size: 16px;
@@ -68,8 +68,9 @@
 
 	&__skills {
 		font-weight: 300;
-		font-size: 10px;
-		line-height: 15px;
+		font-size: 15px;
+		line-height: 16px;
+		margin-bottom: 17px;
 		@include bp994-block() {
 			font-size: 16px;
 			line-height: 24px;
@@ -84,8 +85,8 @@
 
 	&__methods {
 		font-weight: 300;
-		font-size: 10px;
-		line-height: 15px;
+		font-size: 15px;
+		line-height: 17px;
 		@include bp994-block() {
 			font-size: 16px;
 			line-height: 24px;

@@ -21,14 +21,14 @@
 		.block-s__body {
 			/*margin-right: -15px;*/
 			right: 0;
-			animation: slideMenuOpen 1s forwards;
+			animation: slideMenuOpen 0.5s forwards;
 		}
 	}
 
 	&_close {
 		.block-s__body {
 			right: 0;
-			animation: slideMenuClose 1s forwards;
+			animation: slideMenuClose 0.5s forwards;
 			@include bp994-block() {
 				transform: translateX(0);
 				animation: none;
